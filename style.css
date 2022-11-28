@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+:root {
+    --nav_size: 50px;
+    --footer_size: 75px;
+}
+* {
+    box-sizing: border-box;
+}
+#top {
+    background: orange;
+    width: 100%;
+    height: var(--nav_size);
+}
+#bottom {
+    background: green;
+    width: 100%;
+    height: var(--footer_size);
+    /*  */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#center {
+    height: calc(100vh - (var(--footer_size) + var(--nav_size)));
+    display: flex;
+}
+
+#left {
+    background: red;
+    height: 100%;
+    width: 50%;
+}
+#right {
+    background: blue;
+    height: 100%;
+    width: 50%;
+}
+#bottom h1 {
+    margin: 0;
+}
